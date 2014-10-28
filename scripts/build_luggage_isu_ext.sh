@@ -22,6 +22,8 @@ install_site
 
 install_luggage_isu_suitcase
 
+install_luggage_isu_suitcase_ext
+
 install_luggage_features
 
 install_luggage_isu_features
