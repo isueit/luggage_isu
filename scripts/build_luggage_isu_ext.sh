@@ -13,9 +13,9 @@
 #
 
 # Inlcude luggage functions for building
-. $(dirname $0)/libs/luggage.sh
+. $(dirname $0)/libs/luggage_ext.sh
 # Inlcude luggage_isu functions for building
-. $(dirname $0)/libs/luggage_isu.sh
+. $(dirname $0)/libs/luggage_isu_ext.sh
 
 init
 install_site
