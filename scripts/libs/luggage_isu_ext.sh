@@ -19,6 +19,12 @@ install_luggage_isu_suitcase() {
   drush $ALIAS vset theme_default suitcase
 }
 
+install_luggage_isu_suitcase_ext() {
+  # Install Theme - Suitcase Ext
+  drush $ALIAS en -y suitcase_ext
+  drush $ALIAS vset theme_default suitcase_ext
+}
+
 install_luggage_isu_features() {
   # Install luggage_isu features
   drush -v $ALIAS en -y luggage_pubcookie luggage_people_isu
