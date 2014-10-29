@@ -16,7 +16,6 @@ ALIAS="@self"
 install_luggage_isu_suitcase() {
   # Install Theme - Suitcase
   drush $ALIAS en -y suitcase
-  drush $ALIAS vset theme_default suitcase
 }
 
 install_luggage_isu_suitcase_ext() {
