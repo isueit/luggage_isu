@@ -51,6 +51,7 @@ install_site() {
     drush $ALIAS si minimal -y --db-url=mysql://$DBCREDENTIALS@localhost/$BASENAME --site-name=$BASENAME --account-name=adminn install_configure_form.update_status_module='array(FALSE,FALSE)'
 }
 
+<<<<<<< HEAD
 install_luggage_features() {
     ##Install all the Luggage features.
     drush -v $ALIAS en -y luggage_announcements  luggage_ckeditor luggage_contrib luggage_core luggage_events luggage_events_solr luggage_indicator luggage_news 
@@ -63,6 +64,13 @@ install_luggage_features() {
     #luggage_projects 
     #luggage_biblio
 
+=======
+install_luggage_ext_features() {
+    ##Install all the Luggage features.
+    drush -v $ALIAS en -y luggage_announcements luggage_ckeditor luggage_contrib luggage_core luggage_events luggage_events_solr luggage_indicator luggage_news luggage_news_solr luggage_placeholder luggage_people luggage_people_expertise luggage_people_solr luggage_projects luggage_resources luggage_resources_solr luggage_roles luggage_roles_solr luggage_seo luggage_solr luggage_ui luggage_vars
+}
+
+>>>>>>> 8f932adc1c6698dc55d5cdccd07f3df2f7fc8546
 finish() {
     # Revert all the Luggage features.
     drush $ALIAS fra -y
