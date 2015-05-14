@@ -19,11 +19,7 @@ install_luggage_isu_suitcase() {
 }
 
 install_luggage_isu_suitcase_ext() {
-<<<<<<< HEAD
-  # Install Theme - Suitcase_ext
-=======
   # Install Theme - Suitcase Ext
->>>>>>> 8f932adc1c6698dc55d5cdccd07f3df2f7fc8546
   drush $ALIAS en -y suitcase_ext
   drush $ALIAS vset theme_default suitcase_ext
 }
